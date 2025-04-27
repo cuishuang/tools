@@ -11,7 +11,7 @@ import (
 	"strings"
 	"testing"
 
-	"golang.org/x/tools/gopls/internal/doc"
+	"github.com/golang/tools/gopls/internal/doc"
 	"golang.org/x/tools/internal/testenv"
 )
 

@@ -10,7 +10,7 @@ import (
 	"strings"
 	"time"
 
-	"golang.org/x/tools/gopls/internal/util/typesutil"
+	"github.com/golang/tools/gopls/internal/util/typesutil"
 )
 
 // MaxDeepCompletions limits deep completion results because in most cases

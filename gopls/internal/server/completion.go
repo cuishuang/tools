@@ -9,15 +9,15 @@ import (
 	"fmt"
 	"strings"
 
-	"golang.org/x/tools/gopls/internal/file"
-	"golang.org/x/tools/gopls/internal/golang"
-	"golang.org/x/tools/gopls/internal/golang/completion"
-	"golang.org/x/tools/gopls/internal/label"
-	"golang.org/x/tools/gopls/internal/protocol"
-	"golang.org/x/tools/gopls/internal/settings"
-	"golang.org/x/tools/gopls/internal/telemetry"
-	"golang.org/x/tools/gopls/internal/template"
-	"golang.org/x/tools/gopls/internal/work"
+	"github.com/golang/tools/gopls/internal/file"
+	"github.com/golang/tools/gopls/internal/golang"
+	"github.com/golang/tools/gopls/internal/golang/completion"
+	"github.com/golang/tools/gopls/internal/label"
+	"github.com/golang/tools/gopls/internal/protocol"
+	"github.com/golang/tools/gopls/internal/settings"
+	"github.com/golang/tools/gopls/internal/telemetry"
+	"github.com/golang/tools/gopls/internal/template"
+	"github.com/golang/tools/gopls/internal/work"
 	"golang.org/x/tools/internal/event"
 )
 
@@ -160,7 +160,7 @@ func toProtocolCompletionItems(candidates []completion.CompletionItem, surroundi
 			// Insert and Replace ranges share the same start position and
 			// the same text edit but the end position may differ.
 			// See the comment for the CompletionItem's TextEdit field.
-			// https://pkg.go.dev/golang.org/x/tools/gopls/internal/protocol#CompletionItem
+			// https://pkg.go.dev/github.com/golang/tools/gopls/internal/protocol#CompletionItem
 			edits = &protocol.Or_CompletionItem_textEdit{
 				Value: protocol.InsertReplaceEdit{
 					NewText: insertText,

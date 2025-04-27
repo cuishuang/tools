@@ -51,11 +51,11 @@ import (
 	"sync/atomic"
 
 	"golang.org/x/tools/go/types/objectpath"
-	"golang.org/x/tools/gopls/internal/cache/metadata"
-	"golang.org/x/tools/gopls/internal/util/bug"
-	"golang.org/x/tools/gopls/internal/util/fingerprint"
-	"golang.org/x/tools/gopls/internal/util/frob"
-	"golang.org/x/tools/gopls/internal/util/safetoken"
+	"github.com/golang/tools/gopls/internal/cache/metadata"
+	"github.com/golang/tools/gopls/internal/util/bug"
+	"github.com/golang/tools/gopls/internal/util/fingerprint"
+	"github.com/golang/tools/gopls/internal/util/frob"
+	"github.com/golang/tools/gopls/internal/util/safetoken"
 	"golang.org/x/tools/internal/typesinternal"
 )
 

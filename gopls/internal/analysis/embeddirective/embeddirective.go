@@ -23,7 +23,7 @@ var Analyzer = &analysis.Analyzer{
 	Doc:              analysisinternal.MustExtractDoc(doc, "embed"),
 	Run:              run,
 	RunDespiteErrors: true,
-	URL:              "https://pkg.go.dev/golang.org/x/tools/gopls/internal/analysis/embeddirective",
+	URL:              "https://pkg.go.dev/github.com/golang/tools/gopls/internal/analysis/embeddirective",
 }
 
 const FixCategory = "addembedimport" // recognized by gopls ApplyFix

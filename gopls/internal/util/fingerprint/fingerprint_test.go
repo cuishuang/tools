@@ -10,7 +10,7 @@ import (
 
 	"golang.org/x/tools/go/packages"
 	"golang.org/x/tools/go/types/typeutil"
-	"golang.org/x/tools/gopls/internal/util/fingerprint"
+	"github.com/golang/tools/gopls/internal/util/fingerprint"
 	"golang.org/x/tools/internal/testfiles"
 	"golang.org/x/tools/txtar"
 )
@@ -24,7 +24,7 @@ func Test(t *testing.T) {
 	}
 
 	cfg := &packages.Config{Mode: packages.NeedTypes}
-	pkgs, err := packages.Load(cfg, "std", "golang.org/x/tools/gopls/...")
+	pkgs, err := packages.Load(cfg, "std", "github.com/golang/tools/gopls/...")
 	if err != nil {
 		t.Fatal(err)
 	}

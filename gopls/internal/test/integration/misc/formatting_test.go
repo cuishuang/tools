@@ -8,8 +8,8 @@ import (
 	"strings"
 	"testing"
 
-	"golang.org/x/tools/gopls/internal/test/compare"
-	. "golang.org/x/tools/gopls/internal/test/integration"
+	"github.com/golang/tools/gopls/internal/test/compare"
+	. "github.com/golang/tools/gopls/internal/test/integration"
 )
 
 const unformattedProgram = `

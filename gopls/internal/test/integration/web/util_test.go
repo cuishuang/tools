@@ -15,9 +15,9 @@ import (
 	"strings"
 	"testing"
 
-	"golang.org/x/tools/gopls/internal/protocol"
-	"golang.org/x/tools/gopls/internal/test/integration"
-	"golang.org/x/tools/gopls/internal/util/bug"
+	"github.com/golang/tools/gopls/internal/protocol"
+	"github.com/golang/tools/gopls/internal/test/integration"
+	"github.com/golang/tools/gopls/internal/util/bug"
 )
 
 func TestMain(m *testing.M) {

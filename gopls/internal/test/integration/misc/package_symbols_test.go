@@ -9,9 +9,9 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
-	"golang.org/x/tools/gopls/internal/protocol"
-	"golang.org/x/tools/gopls/internal/protocol/command"
-	"golang.org/x/tools/gopls/internal/test/integration"
+	"github.com/golang/tools/gopls/internal/protocol"
+	"github.com/golang/tools/gopls/internal/protocol/command"
+	"github.com/golang/tools/gopls/internal/test/integration"
 )
 
 func TestPackageSymbols(t *testing.T) {

@@ -26,7 +26,7 @@ var Analyzer = &analysis.Analyzer{
 	Doc:      analysisinternal.MustExtractDoc(doc, "simplifyslice"),
 	Requires: []*analysis.Analyzer{inspect.Analyzer},
 	Run:      run,
-	URL:      "https://pkg.go.dev/golang.org/x/tools/gopls/internal/analysis/simplifyslice",
+	URL:      "https://pkg.go.dev/github.com/golang/tools/gopls/internal/analysis/simplifyslice",
 }
 
 // Note: We could also simplify slice expressions of the form s[0:b] to s[:b]

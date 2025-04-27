@@ -9,7 +9,7 @@ package main
 
 import (
 	"golang.org/x/tools/go/analysis/singlechecker"
-	"golang.org/x/tools/gopls/internal/analysis/unusedfunc"
+	"github.com/golang/tools/gopls/internal/analysis/unusedfunc"
 )
 
 func main() { singlechecker.Main(unusedfunc.Analyzer) }

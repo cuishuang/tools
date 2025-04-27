@@ -15,11 +15,11 @@ import (
 	"github.com/google/go-cmp/cmp"
 	"golang.org/x/telemetry/counter"
 	"golang.org/x/telemetry/counter/countertest"
-	"golang.org/x/tools/gopls/internal/protocol"
-	"golang.org/x/tools/gopls/internal/server"
-	. "golang.org/x/tools/gopls/internal/test/integration"
-	"golang.org/x/tools/gopls/internal/test/integration/fake"
-	"golang.org/x/tools/gopls/internal/util/bug"
+	"github.com/golang/tools/gopls/internal/protocol"
+	"github.com/golang/tools/gopls/internal/server"
+	. "github.com/golang/tools/gopls/internal/test/integration"
+	"github.com/golang/tools/gopls/internal/test/integration/fake"
+	"github.com/golang/tools/gopls/internal/util/bug"
 	"golang.org/x/tools/internal/testenv"
 )
 

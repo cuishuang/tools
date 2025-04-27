@@ -11,10 +11,10 @@ import (
 	"testing"
 	"time"
 
-	"golang.org/x/tools/gopls/internal/protocol"
+	"github.com/golang/tools/gopls/internal/protocol"
 	jsonrpc2_v2 "golang.org/x/tools/internal/jsonrpc2_v2"
 
-	. "golang.org/x/tools/gopls/internal/lsprpc"
+	. "github.com/golang/tools/gopls/internal/lsprpc"
 )
 
 // ServerBinder binds incoming connections to a new server.

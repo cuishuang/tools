@@ -18,9 +18,9 @@ import (
 
 	"golang.org/x/tools/go/analysis"
 	"golang.org/x/tools/go/ast/astutil"
-	"golang.org/x/tools/gopls/internal/cache"
-	"golang.org/x/tools/gopls/internal/cache/parsego"
-	"golang.org/x/tools/gopls/internal/util/safetoken"
+	"github.com/golang/tools/gopls/internal/cache"
+	"github.com/golang/tools/gopls/internal/cache/parsego"
+	"github.com/golang/tools/gopls/internal/util/safetoken"
 	"golang.org/x/tools/internal/astutil/cursor"
 )
 

@@ -16,8 +16,8 @@ import (
 	"testing"
 	"time"
 
-	"golang.org/x/tools/gopls/internal/cache"
-	"golang.org/x/tools/gopls/internal/cmd"
+	"github.com/golang/tools/gopls/internal/cache"
+	"github.com/golang/tools/gopls/internal/cmd"
 	"golang.org/x/tools/internal/drivertest"
 	"golang.org/x/tools/internal/gocommand"
 	"golang.org/x/tools/internal/memoize"

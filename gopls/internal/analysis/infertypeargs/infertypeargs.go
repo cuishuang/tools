@@ -32,7 +32,7 @@ var Analyzer = &analysis.Analyzer{
 	Doc:      Doc,
 	Requires: []*analysis.Analyzer{inspect.Analyzer},
 	Run:      run,
-	URL:      "https://pkg.go.dev/golang.org/x/tools/gopls/internal/analysis/infertypeargs",
+	URL:      "https://pkg.go.dev/github.com/golang/tools/gopls/internal/analysis/infertypeargs",
 }
 
 func run(pass *analysis.Pass) (any, error) {

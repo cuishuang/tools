@@ -8,9 +8,9 @@ import (
 	"sync"
 	"testing"
 
-	"golang.org/x/tools/gopls/internal/protocol"
-	. "golang.org/x/tools/gopls/internal/test/integration"
-	"golang.org/x/tools/gopls/internal/test/integration/fake"
+	"github.com/golang/tools/gopls/internal/protocol"
+	. "github.com/golang/tools/gopls/internal/test/integration"
+	"github.com/golang/tools/gopls/internal/test/integration/fake"
 )
 
 // BenchmarkDiagnosePackageFiles measures how long it takes to request

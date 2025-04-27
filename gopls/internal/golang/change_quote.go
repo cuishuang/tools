@@ -11,9 +11,9 @@ import (
 	"strings"
 
 	"golang.org/x/tools/go/ast/astutil"
-	"golang.org/x/tools/gopls/internal/protocol"
-	"golang.org/x/tools/gopls/internal/util/bug"
-	"golang.org/x/tools/gopls/internal/util/safetoken"
+	"github.com/golang/tools/gopls/internal/protocol"
+	"github.com/golang/tools/gopls/internal/util/bug"
+	"github.com/golang/tools/gopls/internal/util/safetoken"
 	"golang.org/x/tools/internal/diff"
 )
 

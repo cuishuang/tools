@@ -22,13 +22,13 @@ import (
 	"strings"
 	"sync"
 
-	"golang.org/x/tools/gopls/internal/cache"
-	"golang.org/x/tools/gopls/internal/cache/metadata"
-	"golang.org/x/tools/gopls/internal/golang"
-	"golang.org/x/tools/gopls/internal/progress"
-	"golang.org/x/tools/gopls/internal/protocol"
-	"golang.org/x/tools/gopls/internal/settings"
-	"golang.org/x/tools/gopls/internal/util/bug"
+	"github.com/golang/tools/gopls/internal/cache"
+	"github.com/golang/tools/gopls/internal/cache/metadata"
+	"github.com/golang/tools/gopls/internal/golang"
+	"github.com/golang/tools/gopls/internal/progress"
+	"github.com/golang/tools/gopls/internal/protocol"
+	"github.com/golang/tools/gopls/internal/settings"
+	"github.com/golang/tools/gopls/internal/util/bug"
 	"golang.org/x/tools/internal/event"
 )
 

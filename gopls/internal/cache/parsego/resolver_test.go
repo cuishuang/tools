@@ -13,7 +13,7 @@ import (
 
 	"golang.org/x/tools/go/ast/astutil"
 	"golang.org/x/tools/go/packages"
-	"golang.org/x/tools/gopls/internal/util/safetoken"
+	"github.com/golang/tools/gopls/internal/util/safetoken"
 	"golang.org/x/tools/internal/testenv"
 )
 
@@ -43,7 +43,7 @@ func TestGoplsSourceDoesNotUseObjectResolution(t *testing.T) {
 	pkgs, err := packages.Load(cfg,
 		"go/ast",
 		"golang.org/x/tools/go/ast/astutil",
-		"golang.org/x/tools/gopls/...")
+		"github.com/golang/tools/gopls/...")
 
 	if err != nil {
 		t.Fatal(err)
@@ -94,11 +94,11 @@ func TestGoplsSourceDoesNotUseObjectResolution(t *testing.T) {
 	// exceptions much easier to maintain.
 	exceptions := []string{
 		"golang.org/x/tools/go/analysis/passes/",                             // analyzers may rely on object resolution
-		"golang.org/x/tools/gopls/internal/analysis/simplifyslice",           // restrict ourselves to one blessed analyzer
-		"golang.org/x/tools/gopls/internal/cache/parsego",                    // used by parsego.File.Resolve, of course
-		"golang.org/x/tools/gopls/internal/golang.builtinDecl",               // the builtin file is resolved
-		"golang.org/x/tools/gopls/internal/golang.NewBuiltinSignature",       // ditto
-		"golang.org/x/tools/gopls/internal/golang/completion.builtinArgKind", // ditto
+		"github.com/golang/tools/gopls/internal/analysis/simplifyslice",           // restrict ourselves to one blessed analyzer
+		"github.com/golang/tools/gopls/internal/cache/parsego",                    // used by parsego.File.Resolve, of course
+		"github.com/golang/tools/gopls/internal/golang.builtinDecl",               // the builtin file is resolved
+		"github.com/golang/tools/gopls/internal/golang.NewBuiltinSignature",       // ditto
+		"github.com/golang/tools/gopls/internal/golang/completion.builtinArgKind", // ditto
 		"golang.org/x/tools/internal/imports",                                // goimports does its own parsing
 		"golang.org/x/tools/go/ast/astutil.UsesImport",                       // disallowed
 		"golang.org/x/tools/go/ast/astutil.isTopName",                        // only reached from astutil.UsesImport

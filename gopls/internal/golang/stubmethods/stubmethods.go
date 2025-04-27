@@ -18,9 +18,9 @@ import (
 	"golang.org/x/tools/go/ast/astutil"
 	"golang.org/x/tools/internal/typesinternal"
 
-	"golang.org/x/tools/gopls/internal/cache/parsego"
-	"golang.org/x/tools/gopls/internal/util/bug"
-	"golang.org/x/tools/gopls/internal/util/typesutil"
+	"github.com/golang/tools/gopls/internal/cache/parsego"
+	"github.com/golang/tools/gopls/internal/util/bug"
+	"github.com/golang/tools/gopls/internal/util/typesutil"
 )
 
 // TODO(adonovan): eliminate the confusing Fset parameter; only the

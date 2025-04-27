@@ -10,7 +10,7 @@ import (
 	"fmt"
 	"sort"
 
-	"golang.org/x/tools/gopls/internal/protocol"
+	"github.com/golang/tools/gopls/internal/protocol"
 	"golang.org/x/tools/internal/tool"
 )
 

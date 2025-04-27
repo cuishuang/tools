@@ -15,14 +15,14 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 
-	"golang.org/x/tools/gopls/internal/cache"
-	"golang.org/x/tools/gopls/internal/protocol"
-	"golang.org/x/tools/gopls/internal/protocol/command"
-	"golang.org/x/tools/gopls/internal/server"
-	"golang.org/x/tools/gopls/internal/test/compare"
-	. "golang.org/x/tools/gopls/internal/test/integration"
-	"golang.org/x/tools/gopls/internal/vulncheck"
-	"golang.org/x/tools/gopls/internal/vulncheck/vulntest"
+	"github.com/golang/tools/gopls/internal/cache"
+	"github.com/golang/tools/gopls/internal/protocol"
+	"github.com/golang/tools/gopls/internal/protocol/command"
+	"github.com/golang/tools/gopls/internal/server"
+	"github.com/golang/tools/gopls/internal/test/compare"
+	. "github.com/golang/tools/gopls/internal/test/integration"
+	"github.com/golang/tools/gopls/internal/vulncheck"
+	"github.com/golang/tools/gopls/internal/vulncheck/vulntest"
 )
 
 func TestRunGovulncheckError(t *testing.T) {

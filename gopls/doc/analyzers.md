@@ -3400,7 +3400,7 @@ for documenting and signaling deprecated identifiers.
 
 Default: on.
 
-Package documentation: [deprecated](https://pkg.go.dev/golang.org/x/tools/gopls/internal/analysis/deprecated)
+Package documentation: [deprecated](https://pkg.go.dev/github.com/golang/tools/gopls/internal/analysis/deprecated)
 
 <a id='directive'></a>
 ## `directive`: check Go toolchain directives such as //go:debug
@@ -3437,7 +3437,7 @@ declaration of a single variable.
 
 Default: on.
 
-Package documentation: [embed](https://pkg.go.dev/golang.org/x/tools/gopls/internal/analysis/embeddirective)
+Package documentation: [embed](https://pkg.go.dev/github.com/golang/tools/gopls/internal/analysis/embeddirective)
 
 <a id='errorsas'></a>
 ## `errorsas`: report passing non-pointer or non-error values to errors.As
@@ -3471,7 +3471,7 @@ This functionality is similar to https://github.com/sqs/goreturns.
 
 Default: on.
 
-Package documentation: [fillreturns](https://pkg.go.dev/golang.org/x/tools/gopls/internal/analysis/fillreturns)
+Package documentation: [fillreturns](https://pkg.go.dev/github.com/golang/tools/gopls/internal/analysis/fillreturns)
 
 <a id='framepointer'></a>
 ## `framepointer`: report assembly that clobbers the frame pointer before saving it
@@ -3576,7 +3576,7 @@ inferred from function arguments, or from other type arguments:
 
 Default: on.
 
-Package documentation: [infertypeargs](https://pkg.go.dev/golang.org/x/tools/gopls/internal/analysis/infertypeargs)
+Package documentation: [infertypeargs](https://pkg.go.dev/github.com/golang/tools/gopls/internal/analysis/infertypeargs)
 
 <a id='loopclosure'></a>
 ## `loopclosure`: check references to loop variables from within nested functions
@@ -3682,7 +3682,7 @@ behavior to have a serious bug and will endeavor to fix it.
 To apply all modernization fixes en masse, you can use the
 following command:
 
-	$ go run golang.org/x/tools/gopls/internal/analysis/modernize/cmd/modernize@latest -fix -test ./...
+	$ go run github.com/golang/tools/gopls/internal/analysis/modernize/cmd/modernize@latest -fix -test ./...
 
 (Do not use "go get -tool" to add gopls as a dependency of your
 module; gopls commands must be built from their release branch.)
@@ -3757,7 +3757,7 @@ Categories of modernize diagnostic:
 
 Default: on.
 
-Package documentation: [modernize](https://pkg.go.dev/golang.org/x/tools/gopls/internal/analysis/modernize)
+Package documentation: [modernize](https://pkg.go.dev/github.com/golang/tools/gopls/internal/analysis/modernize)
 
 <a id='nilfunc'></a>
 ## `nilfunc`: check for useless comparisons between functions and nil
@@ -3854,7 +3854,7 @@ will turn into
 
 Default: on.
 
-Package documentation: [nonewvars](https://pkg.go.dev/golang.org/x/tools/gopls/internal/analysis/nonewvars)
+Package documentation: [nonewvars](https://pkg.go.dev/github.com/golang/tools/gopls/internal/analysis/nonewvars)
 
 <a id='noresultvalues'></a>
 ## `noresultvalues`: suggested fixes for unexpected return values
@@ -3872,7 +3872,7 @@ will turn into
 
 Default: on.
 
-Package documentation: [noresultvalues](https://pkg.go.dev/golang.org/x/tools/gopls/internal/analysis/noresultvalues)
+Package documentation: [noresultvalues](https://pkg.go.dev/github.com/golang/tools/gopls/internal/analysis/noresultvalues)
 
 <a id='printf'></a>
 ## `printf`: check consistency of Printf format strings and arguments
@@ -3963,7 +3963,7 @@ This analyzer ignores generated code.
 
 Default: on.
 
-Package documentation: [simplifycompositelit](https://pkg.go.dev/golang.org/x/tools/gopls/internal/analysis/simplifycompositelit)
+Package documentation: [simplifycompositelit](https://pkg.go.dev/github.com/golang/tools/gopls/internal/analysis/simplifycompositelit)
 
 <a id='simplifyrange'></a>
 ## `simplifyrange`: check for range statement simplifications
@@ -3991,7 +3991,7 @@ This analyzer ignores generated code.
 
 Default: on.
 
-Package documentation: [simplifyrange](https://pkg.go.dev/golang.org/x/tools/gopls/internal/analysis/simplifyrange)
+Package documentation: [simplifyrange](https://pkg.go.dev/github.com/golang/tools/gopls/internal/analysis/simplifyrange)
 
 <a id='simplifyslice'></a>
 ## `simplifyslice`: check for slice simplifications
@@ -4011,7 +4011,7 @@ This analyzer ignores generated code.
 
 Default: on.
 
-Package documentation: [simplifyslice](https://pkg.go.dev/golang.org/x/tools/gopls/internal/analysis/simplifyslice)
+Package documentation: [simplifyslice](https://pkg.go.dev/github.com/golang/tools/gopls/internal/analysis/simplifyslice)
 
 <a id='slog'></a>
 ## `slog`: check for invalid structured logging calls
@@ -4248,7 +4248,7 @@ real-time feedback within gopls.
 
 Default: on.
 
-Package documentation: [unusedfunc](https://pkg.go.dev/golang.org/x/tools/gopls/internal/analysis/unusedfunc)
+Package documentation: [unusedfunc](https://pkg.go.dev/github.com/golang/tools/gopls/internal/analysis/unusedfunc)
 
 <a id='unusedparams'></a>
 ## `unusedparams`: check for unused parameters of functions
@@ -4281,7 +4281,7 @@ This analyzer ignores generated code.
 
 Default: on.
 
-Package documentation: [unusedparams](https://pkg.go.dev/golang.org/x/tools/gopls/internal/analysis/unusedparams)
+Package documentation: [unusedparams](https://pkg.go.dev/github.com/golang/tools/gopls/internal/analysis/unusedparams)
 
 <a id='unusedresult'></a>
 ## `unusedresult`: check for unused results of calls to some functions
@@ -4306,7 +4306,7 @@ Package documentation: [unusedresult](https://pkg.go.dev/golang.org/x/tools/go/a
 
 Default: on.
 
-Package documentation: [unusedvariable](https://pkg.go.dev/golang.org/x/tools/gopls/internal/analysis/unusedvariable)
+Package documentation: [unusedvariable](https://pkg.go.dev/github.com/golang/tools/gopls/internal/analysis/unusedvariable)
 
 <a id='unusedwrite'></a>
 ## `unusedwrite`: checks for unused writes
@@ -4404,6 +4404,6 @@ followed by another call.
 
 Default: on.
 
-Package documentation: [yield](https://pkg.go.dev/golang.org/x/tools/gopls/internal/analysis/yield)
+Package documentation: [yield](https://pkg.go.dev/github.com/golang/tools/gopls/internal/analysis/yield)
 
 <!-- END Analyzers: DO NOT MANUALLY EDIT THIS SECTION -->

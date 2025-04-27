@@ -8,9 +8,9 @@ import (
 	"context"
 	"fmt"
 
-	"golang.org/x/tools/gopls/internal/file"
-	"golang.org/x/tools/gopls/internal/golang"
-	"golang.org/x/tools/gopls/internal/protocol"
+	"github.com/golang/tools/gopls/internal/file"
+	"github.com/golang/tools/gopls/internal/golang"
+	"github.com/golang/tools/gopls/internal/protocol"
 	"golang.org/x/tools/internal/event"
 )
 

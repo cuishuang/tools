@@ -12,12 +12,12 @@ import (
 	"strings"
 	"testing"
 
-	"golang.org/x/tools/gopls/internal/settings"
-	"golang.org/x/tools/gopls/internal/test/compare"
-	. "golang.org/x/tools/gopls/internal/test/integration"
-	"golang.org/x/tools/gopls/internal/test/integration/fake"
+	"github.com/golang/tools/gopls/internal/settings"
+	"github.com/golang/tools/gopls/internal/test/compare"
+	. "github.com/golang/tools/gopls/internal/test/integration"
+	"github.com/golang/tools/gopls/internal/test/integration/fake"
 
-	"golang.org/x/tools/gopls/internal/protocol"
+	"github.com/golang/tools/gopls/internal/protocol"
 )
 
 // Tests golang/go#38815.

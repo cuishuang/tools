@@ -10,7 +10,7 @@ import (
 	"context"
 	"fmt"
 
-	label1 "golang.org/x/tools/gopls/internal/label"
+	label1 "github.com/golang/tools/gopls/internal/label"
 	"golang.org/x/tools/internal/event"
 	"golang.org/x/tools/internal/event/label"
 )

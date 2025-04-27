@@ -8,7 +8,7 @@ import (
 	"testing"
 
 	"golang.org/x/tools/go/analysis/analysistest"
-	"golang.org/x/tools/gopls/internal/analysis/unusedparams"
+	"github.com/golang/tools/gopls/internal/analysis/unusedparams"
 )
 
 func Test(t *testing.T) {

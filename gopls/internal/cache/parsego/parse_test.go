@@ -14,8 +14,8 @@ import (
 	"slices"
 	"testing"
 
-	"golang.org/x/tools/gopls/internal/cache/parsego"
-	"golang.org/x/tools/gopls/internal/util/safetoken"
+	"github.com/golang/tools/gopls/internal/cache/parsego"
+	"github.com/golang/tools/gopls/internal/util/safetoken"
 	"golang.org/x/tools/internal/analysisinternal"
 	"golang.org/x/tools/internal/tokeninternal"
 )

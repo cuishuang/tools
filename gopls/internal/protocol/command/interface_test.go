@@ -9,7 +9,7 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"golang.org/x/tools/gopls/internal/protocol/command/gen"
+	"github.com/golang/tools/gopls/internal/protocol/command/gen"
 	"golang.org/x/tools/internal/testenv"
 )
 

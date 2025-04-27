@@ -10,13 +10,13 @@ import (
 	"slices"
 	"strings"
 
-	"golang.org/x/tools/gopls/internal/cache"
-	"golang.org/x/tools/gopls/internal/file"
-	"golang.org/x/tools/gopls/internal/golang"
-	"golang.org/x/tools/gopls/internal/mod"
-	"golang.org/x/tools/gopls/internal/protocol"
-	"golang.org/x/tools/gopls/internal/protocol/command"
-	"golang.org/x/tools/gopls/internal/settings"
+	"github.com/golang/tools/gopls/internal/cache"
+	"github.com/golang/tools/gopls/internal/file"
+	"github.com/golang/tools/gopls/internal/golang"
+	"github.com/golang/tools/gopls/internal/mod"
+	"github.com/golang/tools/gopls/internal/protocol"
+	"github.com/golang/tools/gopls/internal/protocol/command"
+	"github.com/golang/tools/gopls/internal/settings"
 	"golang.org/x/tools/internal/event"
 )
 

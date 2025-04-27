@@ -30,7 +30,7 @@ package. Use -filter= to display all results.
 
 Example: show all dead code within the gopls module:
 
-	$ deadcode -test golang.org/x/tools/gopls/...
+	$ deadcode -test github.com/golang/tools/gopls/...
 
 The analysis can soundly analyze dynamic calls though func values,
 interface methods, and reflection. However, it does not currently
@@ -75,10 +75,10 @@ on each Package record. So, this template shows dead functions grouped
 by package:
 
 	$ deadcode -f='{{println .Path}}{{range .Funcs}}{{printf "\t%s\n" .Name}}{{end}}{{println}}' -test ./gopls/...
-	golang.org/x/tools/gopls/internal/lsp
+	github.com/golang/tools/gopls/internal/lsp
 		openClientEditor
 
-	golang.org/x/tools/gopls/internal/template
+	github.com/golang/tools/gopls/internal/template
 		Parsed.WriteNode
 		wrNode.writeNode
 

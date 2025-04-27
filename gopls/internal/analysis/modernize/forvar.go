@@ -11,7 +11,7 @@ import (
 	"golang.org/x/tools/go/analysis"
 	"golang.org/x/tools/go/analysis/passes/inspect"
 	"golang.org/x/tools/go/ast/inspector"
-	"golang.org/x/tools/gopls/internal/util/bug"
+	"github.com/golang/tools/gopls/internal/util/bug"
 	"golang.org/x/tools/internal/analysisinternal"
 )
 

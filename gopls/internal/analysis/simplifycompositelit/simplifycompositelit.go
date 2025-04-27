@@ -30,7 +30,7 @@ var Analyzer = &analysis.Analyzer{
 	Doc:      analysisinternal.MustExtractDoc(doc, "simplifycompositelit"),
 	Requires: []*analysis.Analyzer{inspect.Analyzer},
 	Run:      run,
-	URL:      "https://pkg.go.dev/golang.org/x/tools/gopls/internal/analysis/simplifycompositelit",
+	URL:      "https://pkg.go.dev/github.com/golang/tools/gopls/internal/analysis/simplifycompositelit",
 }
 
 func run(pass *analysis.Pass) (any, error) {

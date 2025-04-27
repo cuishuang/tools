@@ -23,12 +23,12 @@ import (
 	"unicode"
 
 	"golang.org/x/tools/go/ast/astutil"
-	"golang.org/x/tools/gopls/internal/cache"
-	"golang.org/x/tools/gopls/internal/cache/metadata"
-	"golang.org/x/tools/gopls/internal/cache/parsego"
-	"golang.org/x/tools/gopls/internal/protocol"
-	goplsastutil "golang.org/x/tools/gopls/internal/util/astutil"
-	"golang.org/x/tools/gopls/internal/util/moremaps"
+	"github.com/golang/tools/gopls/internal/cache"
+	"github.com/golang/tools/gopls/internal/cache/metadata"
+	"github.com/golang/tools/gopls/internal/cache/parsego"
+	"github.com/golang/tools/gopls/internal/protocol"
+	goplsastutil "github.com/golang/tools/gopls/internal/util/astutil"
+	"github.com/golang/tools/gopls/internal/util/moremaps"
 	"golang.org/x/tools/internal/imports"
 	"golang.org/x/tools/internal/typesinternal"
 )

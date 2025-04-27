@@ -11,7 +11,7 @@ import (
 	"testing"
 
 	"golang.org/x/tools/go/packages"
-	. "golang.org/x/tools/gopls/internal/fuzzy"
+	. "github.com/golang/tools/gopls/internal/fuzzy"
 )
 
 func TestSymbolMatchIndex(t *testing.T) {

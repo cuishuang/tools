@@ -16,12 +16,12 @@ import (
 	"sort"
 	"strings"
 
-	"golang.org/x/tools/gopls/internal/debug"
-	"golang.org/x/tools/gopls/internal/doc"
-	"golang.org/x/tools/gopls/internal/filecache"
-	licensespkg "golang.org/x/tools/gopls/internal/licenses"
-	"golang.org/x/tools/gopls/internal/util/browser"
-	goplsbug "golang.org/x/tools/gopls/internal/util/bug"
+	"github.com/golang/tools/gopls/internal/debug"
+	"github.com/golang/tools/gopls/internal/doc"
+	"github.com/golang/tools/gopls/internal/filecache"
+	licensespkg "github.com/golang/tools/gopls/internal/licenses"
+	"github.com/golang/tools/gopls/internal/util/browser"
+	goplsbug "github.com/golang/tools/gopls/internal/util/bug"
 	"golang.org/x/tools/internal/tool"
 )
 
@@ -223,7 +223,7 @@ func (j *apiJSON) DetailedHelp(f *flag.FlagSet) {
 	fmt.Fprint(f.Output(), `
 The api-json command prints a JSON value that describes
 and documents all gopls' public interfaces.
-Its schema is defined by golang.org/x/tools/gopls/internal/doc.API.
+Its schema is defined by github.com/golang/tools/gopls/internal/doc.API.
 `)
 	printFlagDefaults(f)
 }

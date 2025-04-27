@@ -52,7 +52,7 @@ func Load() ([]*Command, error) {
 			Mode:       packages.NeedTypes | packages.NeedTypesInfo | packages.NeedSyntax | packages.NeedImports | packages.NeedDeps,
 			BuildFlags: []string{"-tags=generate"},
 		},
-		"golang.org/x/tools/gopls/internal/protocol/command",
+		"github.com/golang/tools/gopls/internal/protocol/command",
 	)
 	if err != nil {
 		return nil, fmt.Errorf("packages.Load: %v", err)

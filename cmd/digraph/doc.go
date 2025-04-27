@@ -75,8 +75,8 @@ as in the following examples.
 Using an import graph produced by go list, show a path that indicates
 why the gopls application depends on the cmp package:
 
-	$ go list -f '{{.ImportPath}} {{join .Imports " "}}' -deps golang.org/x/tools/gopls |
-		digraph somepath golang.org/x/tools/gopls github.com/google/go-cmp/cmp
+	$ go list -f '{{.ImportPath}} {{join .Imports " "}}' -deps github.com/golang/tools/gopls |
+		digraph somepath github.com/golang/tools/gopls github.com/google/go-cmp/cmp
 
 Show which packages in x/tools depend, perhaps indirectly, on the callgraph package:
 

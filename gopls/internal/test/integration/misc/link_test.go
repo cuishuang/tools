@@ -10,8 +10,8 @@ import (
 	"strings"
 	"testing"
 
-	"golang.org/x/tools/gopls/internal/protocol"
-	. "golang.org/x/tools/gopls/internal/test/integration"
+	"github.com/golang/tools/gopls/internal/protocol"
+	. "github.com/golang/tools/gopls/internal/test/integration"
 )
 
 func TestHoverAndDocumentLink(t *testing.T) {

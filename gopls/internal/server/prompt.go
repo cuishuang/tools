@@ -16,7 +16,7 @@ import (
 
 	"golang.org/x/telemetry"
 	"golang.org/x/telemetry/counter"
-	"golang.org/x/tools/gopls/internal/protocol"
+	"github.com/golang/tools/gopls/internal/protocol"
 	"golang.org/x/tools/internal/event"
 )
 

@@ -32,7 +32,7 @@ var Analyzer = &analysis.Analyzer{
 	Run:              checkDeprecated,
 	FactTypes:        []analysis.Fact{(*deprecationFact)(nil)},
 	RunDespiteErrors: true,
-	URL:              "https://pkg.go.dev/golang.org/x/tools/gopls/internal/analysis/deprecated",
+	URL:              "https://pkg.go.dev/github.com/golang/tools/gopls/internal/analysis/deprecated",
 }
 
 // checkDeprecated is a simplified copy of staticcheck.CheckDeprecated.

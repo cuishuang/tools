@@ -1,4 +1,4 @@
-module golang.org/x/tools/gopls
+module github.com/golang/tools/gopls
 
 go 1.24.2
 

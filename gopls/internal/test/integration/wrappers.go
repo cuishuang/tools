@@ -9,9 +9,9 @@ import (
 	"os"
 	"path"
 
-	"golang.org/x/tools/gopls/internal/protocol"
-	"golang.org/x/tools/gopls/internal/protocol/command"
-	"golang.org/x/tools/gopls/internal/test/integration/fake"
+	"github.com/golang/tools/gopls/internal/protocol"
+	"github.com/golang/tools/gopls/internal/protocol/command"
+	"github.com/golang/tools/gopls/internal/test/integration/fake"
 	"golang.org/x/tools/internal/xcontext"
 )
 

@@ -14,7 +14,7 @@ import (
 	"golang.org/x/tools/go/analysis"
 	"golang.org/x/tools/go/analysis/passes/inspect"
 	"golang.org/x/tools/go/ast/inspector"
-	"golang.org/x/tools/gopls/internal/util/astutil"
+	"github.com/golang/tools/gopls/internal/util/astutil"
 	"golang.org/x/tools/internal/analysisinternal"
 )
 
@@ -55,7 +55,7 @@ var Analyzer = &analysis.Analyzer{
 	Doc:      analysisinternal.MustExtractDoc(doc, "unusedfunc"),
 	Requires: []*analysis.Analyzer{inspect.Analyzer},
 	Run:      run,
-	URL:      "https://pkg.go.dev/golang.org/x/tools/gopls/internal/analysis/unusedfunc",
+	URL:      "https://pkg.go.dev/github.com/golang/tools/gopls/internal/analysis/unusedfunc",
 }
 
 func run(pass *analysis.Pass) (any, error) {

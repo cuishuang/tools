@@ -29,7 +29,7 @@ import (
 	"golang.org/x/tools/go/analysis/passes/inspect"
 	"golang.org/x/tools/go/ast/inspector"
 	"golang.org/x/tools/go/ssa"
-	"golang.org/x/tools/gopls/internal/util/safetoken"
+	"github.com/golang/tools/gopls/internal/util/safetoken"
 	"golang.org/x/tools/internal/analysisinternal"
 )
 
@@ -41,7 +41,7 @@ var Analyzer = &analysis.Analyzer{
 	Doc:      analysisinternal.MustExtractDoc(doc, "yield"),
 	Requires: []*analysis.Analyzer{inspect.Analyzer, buildssa.Analyzer},
 	Run:      run,
-	URL:      "https://pkg.go.dev/golang.org/x/tools/gopls/internal/analysis/yield",
+	URL:      "https://pkg.go.dev/github.com/golang/tools/gopls/internal/analysis/yield",
 }
 
 func run(pass *analysis.Pass) (any, error) {
