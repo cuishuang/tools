@@ -68,9 +68,9 @@ func run(pass *analysis.Pass) (any, error) {
 				panic("Diagnostic.Category is unset")
 			}
 			// TODO(adonovan): stopgap until CL 655555 lands.
-			if !enabledCategory(category, diag.Category) {
-				return
-			}
+			// if !enabledCategory(category, diag.Category) {
+			// 	return
+			// }
 			if _, ok := generated[pass.Fset.File(diag.Pos)]; ok {
 				return // skip checking if it's generated code
 			}
